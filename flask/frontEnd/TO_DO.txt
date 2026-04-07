@@ -18,7 +18,10 @@
         <br>
 		<input type="text" name="Item ID" placeholder="Enter Item Name">
         <br>
-
+        <input type="email" name="Item UUID" placeholder="Enter Item Description">
+        <br>
+		<input type="text" name="Item Hash" placeholder="Enter Item Name">
+        <br>
         <button type="submit">Submit</button>
     </form>
     </div>
