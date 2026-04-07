@@ -37,6 +37,18 @@ def view():
         "data": list_data 
     }
     return data
+@app.route("/submittodoitem", methods=["POST"])
+def submittodo():
+   data = collection.find()   # its a cursor object, we need to convert it into list to access the data
+    list_data = list(data)     # converting the cursor object into list to access the data
 
+    for item in list_data:     # iterating through the list of data and deleting the _id field from each item as it is not needed in the output(_id)
+        print(item)
+        del item["_id"]
+
+    data ={                     # creating a dictionary as the output to return the data in a structured format
+        "data": list_data 
+    }
+    return data
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
