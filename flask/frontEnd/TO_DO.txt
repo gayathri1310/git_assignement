@@ -16,6 +16,9 @@
         <br>
         <input type="email" name="Item Description" placeholder="Enter Item Description">
         <br>
+		<input type="text" name="Item ID" placeholder="Enter Item Name">
+        <br>
+
         <button type="submit">Submit</button>
     </form>
     </div>
